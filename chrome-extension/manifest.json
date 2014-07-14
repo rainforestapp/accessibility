@@ -1,5 +1,5 @@
 {
-  "name": "Accessibility extension",
+  "name": "Colorblind accessibility extension",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "A simple browser extension to notify websites of your accessibility requirements.",
