@@ -1,4 +1,9 @@
-Simple browser extensions to notify websites of your accessibility requirements.
+Simple browser extensions to notify websites of your accessibility requirements. Adds a ``.colorblind`` class to the body of every website you visit.
+
+### Why?
+There is no standardised way of communicating one's accesibility requirements to a browser (and hence a website). The accesibility extension is a potential standard way to simply define one's accesibility issues, and doesn't require the developer to do any additional work aside from actually designing for those issues.
+
+For example, let's say we want to create conditional styles for colorblind users. Without using this extension, we would have to create the infrastructure and code to store whether the user is colorblind or not. With this extension all we need to do is create a new stylesheet for ``.colorblind``.
 
 ### Usage:
 
