@@ -7,7 +7,7 @@ Install from the Chrome web store.
 
 Alternatively, to install manually (for development, for example):
 
-1. clone / download this repo
+1. clone this repo / download as ZIP
 2. goto Extensions preferences (under Chrome preferences)
 3. enable 'Developer mode' by checking the developer mode checkbox
 4. click 'load unpacked extension' and select the 'chrome-extension' folder from this repo
