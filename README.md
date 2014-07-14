@@ -10,7 +10,7 @@ For example, let's say we want to create conditional styles for colorblind users
 ### Usage:
 
 #### Chrome extension
-Install from the Chrome web store.
+Install [from the Chrome web store](https://chrome.google.com/webstore/detail/colorblind-accessibility/glonfoenllnnmaldbmllddheaenpamlp).
 
 Alternatively, to install manually (for development, for example):
 
