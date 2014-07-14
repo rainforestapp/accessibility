@@ -20,6 +20,11 @@ Alternatively, to install manually (for development, for example):
 4. click 'load unpacked extension' and select the 'chrome-extension' folder from this repo
 5. enjoy!
 
+### Sites that are accessibility-friendly
+i.e. that have created styles to target accessibility issues:
+
+- [rainforestqa.com](https://rainforestqa.com)
+
 ### Todo:
 - [x] Chrome extension
 - [x] add 'colorblind' class to body
