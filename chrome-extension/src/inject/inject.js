@@ -13,9 +13,12 @@ function hasStyle(selector) {
       // ie: google-web-font
       if (rules) {
         for (var x=0; x<rules.length; x++) {
-          // Return true has soon as a corresponding rule is found
-          if (rules[x].selectorText == selector) {
-            return true;
+          // Prevent error if the rule dont have a selectorText
+          if (rules[x].selectorText) {
+            // Return true has soon as a corresponding rule is found
+            if (rules[x].selectorText.indexOf(selector) > -1 ) {
+              return true;
+            }
           }
         }
       }
