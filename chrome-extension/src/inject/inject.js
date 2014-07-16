@@ -2,13 +2,13 @@ function hasStyle(selector) {
   // Check in all inline & external StyleSheets
   var stylesheets = document.styleSheets;
 
-  // Prevent error is there’s no StyleSheet on the page
+  // Prevent error if there’s no StyleSheet on the page
   if (stylesheets) {
     for (var i=0; i<stylesheets.length; i++) {
 
       var rules = document.styleSheets[i].cssRules;
 
-      // Prevent error is there’s not cssRules into a StyleSheet
+      // Prevent error if there’s no cssRules into a StyleSheet
       // Mainly common for font-face only StyleSheet
       // ie: google-web-font
       if (rules) {
