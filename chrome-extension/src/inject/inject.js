@@ -27,9 +27,16 @@ function hasStyle(selector) {
   return false;
 }
 
+// Add extension listener (event from background.js)
+chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+  // Return true to show pageAction (Omnibox icon)
+  // if a `.colorblind` CSS rule is defined on the current page
+  sendResponse(hasStyle('.colorblind'));
+});
+
 // This is somewhat ghetto. Worth doing properly if
 // lots of people want to use it.
 document.addEventListener('DOMContentLoaded', function(){
   var classList = ["colorblind"];
   document.body.className += " " + classList.join(" ");
- });
+});
