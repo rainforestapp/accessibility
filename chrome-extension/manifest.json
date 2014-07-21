@@ -1,11 +1,19 @@
 {
   "name": "Colorblind accessibility extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "A simple browser extension to notify websites of your accessibility requirements.",
   "homepage_url": "https://github.com/rainforestapp/accessibility",
   "default_locale": "en",
+  "background": { "scripts": ["src/background/background.js"] },
   "options_page": "src/options/index.html",
+  "page_action": {
+    "default_title": "Colorblind specific CSS rules detected on this page.",
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    }
+  },
   "content_scripts": [
     {
       "matches": [
