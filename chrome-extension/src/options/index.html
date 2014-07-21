@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Accessibility Options</title>
+
+	<style>
+		.label {
+			display: block;
+			font-weight: bold;
+		}
+	</style>
 </head>
 <body>
+
+	<h1>Accessibility Extension Setting</h1>
+
+	<label>
+		<span class="label">Select your type of color blindness</span>
+		<select id="blindness" name="blindness">
+			<option value=""></option>
+			<optgroup label="Monochromacy">
+				<option value="achromatopsia">Achromatopsia</option>
+			</optgroup>
+			<optgroup label="Dichromacy">
+				<option value="protanopia">Protanopia</option>
+				<option value="deuteranopia">Deuteranopia</option>
+				<option value="tritanopia">Tritanopia</option>
+			</optgroup>
+			<optgroup label="Trichromacy">
+				<option value="protanomaly">Protanomaly</option>
+				<option value="deuteranomaly">Deuteranomaly</option>
+				<option value="tritanomaly">Tritanomaly</option>
+			</optgroup>
+		</select>
+	</label>
+
+	<script src="./js/scripts.js"></script>
 
 </body>
 </html>

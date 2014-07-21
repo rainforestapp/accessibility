@@ -28,8 +28,8 @@ i.e. that have created styles to target accessibility issues:
 ### Todo:
 - [x] Chrome extension
 - [x] add 'colorblind' class to body
-- [ ] toggleable accessibility requirements from localstorage + options page
-- [ ] detect when page has styles for colorblind users and signify in omnibox
+- [x] toggleable accessibility requirements from localstorage + options page
+- [x] detect when page has styles for colorblind users and signify in omnibox
 - [ ] firefox extension
 - [ ] IE extension
 - [ ] Safari extension
