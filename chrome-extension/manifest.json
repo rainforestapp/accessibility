@@ -6,6 +6,7 @@
   "homepage_url": "https://github.com/rainforestapp/accessibility",
   "default_locale": "en",
   "background": { "scripts": ["src/background/background.js"] },
+  "permissions": ["storage"],
   "options_page": "src/options/index.html",
   "page_action": {
     "default_title": "Colorblind specific CSS rules detected on this page.",
