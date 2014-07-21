@@ -41,5 +41,17 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 // lots of people want to use it.
 document.addEventListener('DOMContentLoaded', function(){
   var classList = ["colorblind"];
-  document.body.className += " " + classList.join(" ");
+
+  // Set blindness type specific class based on saved settings
+  chrome.storage.sync.get('blindness', function(data) {
+    // Prevent error if no settings saved yet
+    if (typeof data.blindness !== 'undefined') {
+      // Apply class only if a specific blindness type is define
+      if (data.blindness !== '') {
+        classList.push('colorblind-' + data.blindness);
+      }
+    }
+
+    document.body.className += " " + classList.join(" ");
+  });
 });
